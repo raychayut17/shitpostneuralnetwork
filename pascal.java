@@ -3,7 +3,7 @@ class Main {
 		int row, column, i, pas[][];
 		i = 7; // Number of steps
 		pas = new int[i][i]; // Initialize Triangle
-    	int s = i-1; // For calculating Spacing
+    		int s = i-1; // For calculating Spacing
 		
 		for(row=0; row<i; row++){ // Iterates through rows
 			for(column=0; column<=row; column++){ // Iterates through columns
@@ -16,15 +16,15 @@ class Main {
 		}
 		
 		for(row=0;row<i;row++){
-	        for(column=0;column<=s;column++)
-			    System.out.print(" ");
-			    
-			s--;
-	        
-	        for(column=0;column<=row;column++)
-	            System.out.print(pas[row][column]+" ");
+			for(column=0;column<=s;column++)
+				    System.out.print(" ");
 
-	        System.out.println();
+				s--;
+
+			for(column=0;column<=row;column++)
+			    System.out.print(pas[row][column]+" ");
+
+	        	System.out.println();
 		} 
   	}
 }
